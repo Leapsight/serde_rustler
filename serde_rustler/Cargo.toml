@@ -19,4 +19,5 @@ lazy_static = "1.4.0"
 thiserror = "1.0"
 rustler = {version = "0.29.0", features = ["nif_version_2_16"]}
 rustler_codegen = "0.29.0"
-serde = "1.0"
+# serde = "1.0"
+serde = { version = "1.0.137" }

@@ -5,12 +5,14 @@ use serde::{
     serde_if_integer128,
 };
 
+// ale
+
 #[inline]
 /// Converts a native Rust type into a native Elixir term. See [conversion table](https://github.com/sunny-g/serde_rustler/tree/master/serde_rustler#conversion-table) for details about serialization behavior.
 ///
 pub fn to_term<T>(env: Env, value: T) -> Result<Term, Error>
 where
-    T: Serialize,
+    T: Serialize + std::fmt::Debug,
 {
     value.serialize(Serializer::from(env))
 }

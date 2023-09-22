@@ -96,6 +96,12 @@ pub enum Error {
     #[error("Failed to serialize variant to atom or string")]
     InvalidVariantName,
 
+    #[error("Failed to serialize variant to atom or string #2")]
+    InvalidVariantName2,
+
+    #[error("Failed to serialize variant to atom or string #3")]
+    InvalidVariantName3,
+
     #[error("Failed to serialize struct name to atom or string")]
     InvalidStructName,
 
